@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .bgcolor {
+            width: 100%;
+        }
+
+        .submit {
+            position: absolute;
+            z-index: 9;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            margin-top: 150px;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form_title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        .form_input {
+            padding: 0 30px;
+            box-sizing: border-box;
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .inputs {
+            height: 40px;
+            width: 300px;
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+            color: #666;
+            padding-left: 20px;
+        }
+
+        .form_input span {
+            width: 85px;
+            align-self: center;
+        }
+
+        .btn_submit {
+            align-self: center;
+        }
+
+        .bott {
+            border: none;
+            width: 80px;
+            height: 40px;
+            color: #ffffff;
+            border-radius: 5px;
+            background: #3be3d2;
+            margin-top: 40px;
+        }
+
+        .bott:hover {
+            background: #8075d8;
+        }
+
+        .back2home {
+            margin-left: 30px;
+        }
+
+        .home_href {
+            border: none;
+            width: 80px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            background: #FFD204;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="from">
+        <img class="bgcolor" src="img/daoqi.jpg" >
+        <div class="submit">
+            <span class="form_title">person info</span>
+            <div class="form_input">
+                <span>name：</span>
+                <input class="inputs" type="text" value="Houming(Alan) leng">
+            </div>
+            <div class="form_input">
+                <span>major:</span>
+                <input class="inputs" type="text" value="Computer Science">
+            </div>
+            <div class="form_input">
+                <span>phone number：</span>
+                <input class="inputs" type="text" value="206-257-81xx">
+            </div>
+            <div class="form_input">
+                <span>hobby：</span>
+                <input class="inputs" type="text" value="hiking,cooking">
+            </div>
+            <div class="form_input">
+                <span>Class Name：</span>
+                <input class="inputs" type="text" value="Cs5610">
+            </div>
+             <div class="form_input">
+                <span>Email：</span>
+                <input class="inputs" type="email" value="leng.hou@northeastern.edu">
+            </div>
+   
+            <div class="btn_submit">
+                <a href="#">
+                    <button class="bott">submit</button></a>
+                <a href="index.html" class="back2home"><button class="home_href">back home</button></a>
+            </div>
+        </div>
+    </div>
+</body>

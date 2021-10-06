@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .cc{
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+        "box4"
+        "box1"
+        "box2 "
+        "box3 "
+        "box5 "
+        ;
+
+        }
+        .bottom {
+            display: flex;
+            justify-content: left;
+            position: fixed;
+            right: 50px;
+            top: 50px;
+            margin: auto;
+            grid-area: box4;
+        }
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box5{
+    grid-area: box5;
+}
+        .bottom:after,
+        .bottom:before {
+            margin-top: 0.5em;
+            content: "";
+            display: flex;
+        ;
+            border: 1.5em solid #fff;
+        }
+
+        .bottom:after {
+            border-right-color: transparent;
+        }
+
+        .bottom:before {
+            border-left-color: transparent;
+        }
+
+        .bottom a:link,
+        .bottom a:visited {
+            color: #000;
+            text-decoration: none;
+            height: 3.5em;
+            overflow: hidden;
+        }
+
+        .bottom span {
+            background: #fff;
+            display: inline-block;
+            line-height: 3em;
+            padding: 0 1.5em;
+            margin-top: 0.5em;
+            position: relative;
+            transition: background-color 0.2s, margin-top 0.2s;
+        }
+
+        .bottom a:hover span {
+            background: #FFD204;
+            margin-top: 0;
+        }
+
+        .bottom span:before {
+            content: "";
+            position: absolute;
+            top: 3em;
+            left: 0;
+            border-right: 0.5em solid #9B8651;
+            border-bottom: 0.5em solid #fff;
+        }
+
+        .bottom span:after {
+            content: "";
+            position: absolute;
+            top: 3em;
+            right: 0;
+            border-left: 0.5em solid #9B8651;
+            border-bottom: 0.5em solid #fff;
+        }
+    </style>
+</head>
+<body background="img/project_bg.jpg">
+
+
+<div class="cc">
+    <div class='bottom box4'>
+        <a href='index.html'><span>Home</span></a>
+        <a href='about.html'><span>About</span></a>
+        <a href='form.html'><span>Form</span></a>
+        <a href="./projects.html"><span>projects</span></a>
+    </div>
+
+
+        <div class="box1">
+            <span>Connect Four Game @ Northeastern university</span>
+            <ul>
+                <li>Designed and developed the connect Four graphical game by using Python</li>
+                <li>Adopt processing to enable the computer and human interactions, record and maintain a score board for players</li>
+                <li>Built Artificial intelligence with Monte Carlo Simulation play against human player that highly increased game difficulty.</li>
+            </ul>
+        </div>
+        <div class="box2">
+            <span>
+                China Nucang Technology Inc.
+            </span>
+            <ul>
+                <li>Assistant in the project for developing the database and web by java.</li>
+                <li>Including with the parts of user login account create and file upload.</li>
+                <li>Testing the SQL and migrated existing website from SQL membership to the ASP.NET. Web scraping, data categorizing, researchaggregating,
+                    platform building, general troubleshooting of webs, and administration of clients account.</li>
+            </ul>
+        </div>
+        <div class="box3">
+            <span>Nonprofit Communication Automation</span>
+            <ul>
+                <li> Designed Gradle project in Jave with MVC architecture,employed builder pattern,
+                enabled program processing specific commands</li>
+                <li>Fulfilled functionalities: collecting data from CSV files,searching, display, deleteing data, and updating data on original or
+                new CSVs.</li>
+            </ul>
+        </div>
+        <div class="box5">
+            <span>Shopping, Stock System design [Java] @personal project</span>
+            <ul>
+                <li> By using JSP, Jquery, Ajax, and CSS for designing stock web page and shopping page.</li>
+                <li>Using Mysql, JDBC for add, delete, update, select from the requirements to the MySQL database.</li>
+                <li> Using mybatis and SqlSession to combine with the mysql sentence to hold the data into objects or change the data from object to the
+                    database</li>
+                <li> Using Servlet to accept the requests from web, invoke the underlying (Sqlsession)Service to processing data</li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
